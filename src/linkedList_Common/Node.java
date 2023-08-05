@@ -3,7 +3,16 @@ package linkedList_Common;
 public class Node {
 
 	private Node next;
+	private Node prev;
 	private int data;
+
+	public Node getPrev() {
+		return prev;
+	}
+
+	public void setPrev(Node prev) {
+		this.prev = prev;
+	}
 
 	public Node(int data) {
 		this.data = data;

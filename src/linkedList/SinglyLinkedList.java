@@ -118,7 +118,7 @@ public class SinglyLinkedList {
 
 	// remove from a position
 	public void removeFromPosition(int position) {
-		if (position == 1) {
+		if (position == 1 || position < 1) {
 			head = head.getNext();
 		} else {
 			Node current = head;
